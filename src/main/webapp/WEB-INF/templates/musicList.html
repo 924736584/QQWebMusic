@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" th:href="@{/staticresource/css/reset.css}"/>
+		<link rel="stylesheet" href="css/musiclist.css" th:href="@{/staticresource/css/musiclist.css}" />
+		<script type="text/javascript" src="js/index.js" th:src="@{/staticresource/js/index.js}"></script>
+	</head>
+	<body>
+		<div class="songiteml" id="items" th:fragment="songitems">
+				<li class="listmusic">
+				<input type="checkbox" name="" id="" value="" />
+				<h5 class="sname">歌曲</h5>
+				<h5 class="songer">歌手</h5>
+				<h5 class="songtime">时长</h5>
+				</li>
+				<li class="listmusic playli"  th:each="aplist,status:${playlist}">
+					<input type="checkbox" />
+					<i th:value="${aplist.id}">[[${status.index}]]</i>
+					<h5 class="songtit">[[${aplist.songname}]]</h5>
+					<h5 class="sogername">[[${aplist.songer}]]</h5>
+					<h5 class="sogertime">03:21</h5>
+				</li>
+			</div>
+	</body>
+</html>

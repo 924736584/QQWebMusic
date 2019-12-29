@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mapper.SonginfoMapper">
+  <resultMap id="BaseResultMap" type="org.pojo.Songinfo">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="songname" jdbcType="CHAR" property="songname" />
+    <result column="songer" jdbcType="CHAR" property="songer" />
+    <result column="songword" jdbcType="CHAR" property="songword" />
+    <result column="playnum" jdbcType="DECIMAL" property="playnum" />
+    <result column="gqti" jdbcType="TINYINT" property="gqti" />
+    <result column="xgsf" jdbcType="TINYINT" property="xgsf" />
+    <result column="jctj" jdbcType="TINYINT" property="jctj" />
+    <result column="xdsf" jdbcType="TINYINT" property="xdsf" />
+    <association property="songsytype" javaType="org.pojo.Songsytype">
+      <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="style" jdbcType="CHAR" property="style" />
+    </association>
+  </resultMap>
+
+  <sql id="QueryAllValue">
+    select * from Songinfo
+  </sql>
+  <sql id="QueryPartValue">
+    select id, songName,songer,gqti,xgsf,jctj,xdsf from Songinfo
+  </sql>
+    <sql id="QueryPartValueById">
+    select id, songName,songer,gqti,xgsf,jctj,xdsf from Songinfo where id=#{id}
+  </sql>
+   <sql id="QueryAllValueById">
+    select * from Songinfo where id=#{id}
+  </sql>
+<!--  插入语句-->
+  <insert id="Songinfoinstall" parameterType="org.pojo.Songinfo">
+    insert into songinfo (id,songname,songer,songword) values (#{id},#{songname},#{songer},#{songword});
+  </insert>
+<!--  查询语句-->
+  <select id="QueryAllSonginfoVale" resultMap="BaseResultMap">
+    <if test="#{flog}">
+      <include refid="QueryAllValue"/>
+    </if>
+    <if test="!#{flog}">
+      <include refid="QueryPartValue"></include>
+    </if>
+  </select>
+<select id="QueryByIdInfo" resultMap="BaseResultMap">
+  <include refid="QueryAllValueById"></include>
+</select>
+  <select id="QuerySonginfoValueById"  resultMap="BaseResultMap">
+    <if test="#{flog}">
+      <include refid="QueryAllValueById"></include>
+    </if>
+    <if test="!#{flog}">
+      <include refid="QueryPartValueById"></include>
+    </if>
+  </select>
+  <select id="QuerySongType" resultMap="BaseResultMap">
+    select * from songinfo where ${type}=1
+  </select>
+<select id="QueryInfoByType" resultMap="BaseResultMap">
+  select a.*,b.*
+  from songinfo a left join songsytype b on a.`id`=b.`id`
+  where a.id=#{id,jdbcType=TINYINT} and b.type=#{type,jdbcType=TINYINT}
+</select>
+  <select id="QueryTypeAndStyle" resultMap="BaseResultMap">
+    select a.*,b.*
+    from songinfo a left join songsytype b on a.id=b.id where b.type=#{type} and b.style like #{style}
+  </select>
+<!--修改数据-->
+  <update id="UpdateSonginfoValue" parameterType="org.pojo.Songinfo">
+update songinfo set songName=#{songname},songer=#{songer},playnum=#{playnum},
+gqti=#{gqti},xgsf=#{xgsf},jctj=#{jctj},xdsf=#{xdsf} where id=#{id}
+  </update>
+<!--  删除数据ById-->
+  <delete id="DeleteSonginfovalue" parameterType="Integer">
+    delete songinfo where id=#{id}
+  </delete>
+
+
+</mapper>

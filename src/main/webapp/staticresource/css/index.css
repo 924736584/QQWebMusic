@@ -1,0 +1,293 @@
+/*index样式*/
+html,body{
+	margin: 0;
+	font-size:12px ;
+	height: 5000px;
+}
+.songtjian {
+		background-color:#f3f3f3 ;
+		overflow: hidden;
+}
+.songtjian .songcontent{
+	overflow: hidden;
+
+}
+.songtjian .songcontent label.title{
+	height: 114px;
+	width: 100%;
+	margin: 0 auto;
+	line-height:114px ;
+	text-align: center;
+	display: block;
+	color: #333333;
+	font-size: 35px;
+	letter-spacing: 10px;
+	font-family:"黑体";
+}
+.songtjian .songcontent .listti{
+	width: 100%;
+	height: 50px;
+}
+.songtjian .songcontent ul{
+	width: 650px;
+	/*overflow: hidden;*/
+	margin: 0 auto;
+	padding: 0 10px;
+	height: 50px;
+}
+.songtjian .songcontent li.itemty{
+	float: left;
+	width: 60px;
+	height: 22px;
+	margin:0 24px;
+	display: block;
+	font-size: 15px;
+	cursor:pointer ;
+	transition:all 0.1s linear
+}
+.songtjian .songcontent .popcontent{
+	/*float: left;*/
+	width: 100%;
+	height: 304px;
+	overflow: hidden;
+	/*overflow-y: scroll;*/
+	position: relative;
+}
+.songtjian .songcontent .popcontent .popcontenrt{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.songtjian .songcontent .popcontent .popimg{
+	width: 240px;
+	height: 310px;
+	float: left;
+}
+ .songcontent .popcontent .popimg img{
+ 	margin: 0 auto;
+		background-color: orange;
+		width: 224px;
+		height: 224px;
+		display: block;
+}
+ .songcontent .popcontent .popimg label{
+ 	display: block;
+ 	margin-top: 15px;
+ 	margin-left: 10px;
+ 	transition:all 0.1s linear;
+ 	cursor: pointer;
+ }
+.songcontent .popcontent .popimg span{
+  	margin-top: 5px;
+  	margin-left: 10px;
+  	display: block;
+  	color: #a2a2a2;
+  }
+  
+.songcontent .butn{
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+}
+.songcontent .butn ul{
+padding: 0 5px;
+	margin: 0 auto;
+	overflow: hidden;
+	float: right;
+}
+.songcontent  i.fyb{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border:1px solid red;
+	background-color: red;
+	display: inline-block;     
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+/*歌曲推荐经过效果*/
+.songtjian .songcontent li.itemty:hover,
+ .songcontent .popcontent .popimg label:hover
+{
+	color:#31c27c;
+}
+/*action动作*/
+.action{
+	color:#31c27c;
+}
+
+.songcontent .songlist_item.xinsong{
+	overflow: hidden;
+	/*overflow-x:auto ;*/
+	position: relative;
+	height: 444px;
+}
+.songcontent .songlist_item .pop_item{
+	position: absolute;
+	height: 444px;
+	left: 0;
+	top:0;
+	float: left;
+}
+.songcontent .songlist_item .pop_item .contentbox{
+	width: 1200px;
+	height: 444px;
+	float: left;
+}
+.songcontent .songlist_item .songlist{
+	width: 398px;
+	height: 111px;
+	float: left;
+	position: relative;
+}
+.songcontent .songlist_item .songlist img{
+	width: 86px;
+	height: 86px;
+	background-color: green;
+	position: absolute;
+	left: 0;
+	top:12px;
+	cursor:pointer;
+	transition: all 0.1s linear;
+}
+.songlist_item .songlist p.title{
+	cursor: pointer;
+	width: 208px;
+	line-height: 15px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow:hidden ;
+	position: absolute;
+	left: 90px;
+	top: 50%;
+	margin-top: -14px;
+	font-size: 15px;
+	
+}
+.songlist_item .songlist span{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow:hidden ;
+	float: left;
+	position: absolute;
+	left: 90px;
+	top: 50%;
+	margin-top: 5px;
+	color: #b4b4b4;
+	display: block;
+}
+.songlist_item .songlist i.time{
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	text-align: center;
+	right: 15px;
+	top: 50%;
+	margin-top: -10px;
+	font-style: normal;
+	font-weight: bold;
+	color: #b4b4b4;
+	
+}
+/*新歌首发经过效果*/
+.songlist_item .songlist p.title:hover
+{
+	color:#31c27c;
+}
+
+
+.tuijian {
+	background-color:#f3f3f3 ;
+		overflow: hidden;
+}
+.tuijian .songcontent{
+	overflow: hidden;
+}
+.tuijian .songcontent label.title{
+	height: 114px;
+	width: 100%;
+	margin: 0 auto;
+	line-height:114px ;
+	text-align: center;
+	display: block;
+	color: #333333;
+	font-size: 35px;
+	letter-spacing: 10px;
+	font-family:"黑体";
+}
+.tuijian .Jctjitems{
+	height:270px ;
+	width: 2400px;
+}
+.tuijian .songcontent a{
+	height: 260px;
+	width: 600px;
+	display: block;
+	float: left;
+	margin-bottom: 10px;
+}
+.tuijian .songcontent a img.left{
+	float: left;
+	height: 260px;
+	width: 590px;
+	background-color:yellow ;
+	cursor: pointer;
+}
+.tuijian .songcontent a img.right{
+	float: right;
+	height: 260px;
+	width: 590px;
+	background-color:yellow ;
+	cursor: pointer;
+}
+.tuijian .songcontent .butn{
+		height: 50px;
+	width: 100%;
+	overflow: hidden;
+}
+.tuijian .songcontent .butn ul{
+	width: 650px;
+	/*overflow: hidden;*/
+	margin: 0 auto;
+	padding: 0 10px;
+	height: 50px;
+}
+.tuijian .songcontent .butn .fyb{
+	float: left;
+}
+.songtjian .songcontent .dielist{
+	width: 238px;
+	height: 308px;
+	float: left;
+}
+.songtjian .songcontent .dielist img{
+	width: 224px;
+	height: 224px;
+	display: block;
+	margin: 0px auto;
+		background-color: cornflowerblue;
+		cursor: pointer;
+}
+.songtjian .songcontent .dielist .songname{
+	margin-left: 10px;
+	margin-top: 20px;
+		display: block;
+		cursor: pointer;
+}
+.songcontent .dielist span{
+	margin-left: 10px;
+	margin-top: 10px;
+		display: block;
+		cursor: pointer;
+}
+.wai{
+	height:600px;
+	width: 100%;
+	overflow: hidden;
+}
+/*新碟首发经过事件*/
+.songtjian .songcontent .dielist .songname:hover,
+.songcontent .dielist span:hover{
+	color:#31c27c;
+}

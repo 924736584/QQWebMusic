@@ -1,0 +1,81 @@
+
+.songiteml li{
+	background-color: greenyellow;
+	height: 40px;
+	display: block;
+	border-bottom: 1px solid #A2A2A2;
+	padding: 5px 0px;
+	position: relative;
+	
+}
+.songiteml  input{
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		margin-top:-7px ;
+}
+.songiteml  h5.sname{
+	padding-top:7px;
+	width: 375px;
+	height: 40px;
+	position: absolute;
+		left: 80px;
+		top: 50%;
+		margin-top:-20px ;
+}
+.songiteml  h5.songer{
+	padding-top:7px;
+	width: 100px;
+	height: 40px;
+	position: absolute;
+		left: 470px;
+		top: 50%;
+		margin-top:-20px ;
+}
+.songiteml  h5.songtime{
+	padding-top:7px;
+	width: 50px;
+	height: 40px;
+	position: absolute;
+		left: 640px;
+		top: 50%;
+		margin-top:-20px ;
+}
+.songiteml i {
+	padding-top:7px;
+	width: 10px;
+	height: 40px;
+	position: absolute;
+		left: 60px;
+		top: 50%;
+		margin-top:-20px ;
+}
+.songiteml  h5.songtit{
+padding-top:7px;
+	width: 375px;
+	height: 40px;
+	position: absolute;
+		left: 80px;
+		top: 50%;
+		margin-top:-20px ;
+}
+.songiteml  h5.sogername{
+padding-top:7px;
+	width: 100px;
+	height: 40px;
+	position: absolute;
+		left: 470px;
+		top: 50%;
+		margin-top:-20px ;
+}
+.songiteml  h5.sogertime{
+padding-top:7px;
+	width: 50px;
+	height: 40px;
+	position: absolute;
+		left: 640px;
+		top: 50%;
+		margin-top:-20px ;
+}

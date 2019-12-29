@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>QQ播放器</title>
+		<link rel="stylesheet" href="css/reset.css" th:href="@{/staticresource/css/reset.css}"/>
+		<link rel="stylesheet" href="css/Player.css" th:href="@{/staticresource/css/Player.css}" />
+		<script type="text/javascript" th:src="@{/staticresource/js/Player.js}"></script>
+	</head>
+	<body onload="playerStyle()">
+
+		<!--顶部栏S-->
+		<div class="topbar">
+			<div class="lefttop">
+				<a href="" class="home">QQ音乐</a>
+			</div>
+			<div class="righttop">
+				<h3>QQ音乐，千万高品质曲库尽享</h3>
+				<button>客户端下载</button>
+				<div class="user">
+					<img src=""/>
+					<span>仅此不是而已</span>
+				</div>
+				<label>设置</label>
+				<label class="out">退出</label>
+			</div>
+		</div>
+		<!--顶部栏E-->
+		<!--内容区左边S-->
+		<div class="mcontentleft">
+			<div class="butlist comwh">
+				<ul>
+					<li>收藏</li>
+					<li>添加</li>
+					<li>下载</li>
+					<li>删除</li>
+					<li>清空列表</li>
+				</ul>
+			</div>
+		<iframe name="listv" class="comwh" src="musicList.html" th:src="@{/musicList}" width="100%" height="350px" scrolling="auto">
+		</iframe>
+		</div>
+		<!--内容区左边E-->
+		<!--内容区右边S-->
+		<div class="mcontenright">
+			<img src="" />
+			<iframe src="wordsmusic.html" th:src="@{/wordsmusic}" width="80%" height="210px" scrolling="auto" >
+		</iframe>
+			</div>
+		<!--内容区右边E-->
+		<div class="player">
+			<audio src="" th:src="'http://mp3.9ku.com/m4a/'+${thisplay.id}+'.m4a'"></audio>
+		</div>
+			<!--底部栏S-->
+		<div class="boutombar" id="value" value="" th:value="${thisplay.id}">
+			<div class="barleft">
+				<p class="up">上一首</p>
+				<p class="play">播放</p>
+				<p class="down">下一首</p>
+				<div class="conttonr">
+					<h4 class="palysong">[[${thisplay.songname}]]</h4>
+					<i>-</i>
+					<h4 class="songername">[[${thisplay.songer}]]</h4>
+					<param class="playparm"  />
+					<div class="fa">
+					<div class="Onbar"></div>
+					</div>
+					<div class="Onrunder"></div>
+					<div class="Ontime"></div>
+					<div class="Currtime"></div>
+				</div>
+			</div>
+			
+			<div class="barright">
+				
+			</div>
+		</div>
+			<!--底部栏E-->
+	</body>
+</html>

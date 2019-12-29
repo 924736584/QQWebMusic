@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <package name="org.pojo"/>
+    </typeAliases>
+    <mappers>
+    <!-- 映射文件-->
+<!--        <mapper resource = "org/mapper/TbNewInfo.xml"/>-->
+<!--        <mapper resource = "org/mapper/TbUserInfo.xml"/>-->
+    </mappers>
+</configuration>

@@ -1,0 +1,138 @@
+html,body{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+.fixleft{
+	height:95%;
+	width: 20%;
+	position: fixed;
+	left: 15px;
+	top: 20px;
+	bottom: 10px;
+	background-color: orange;
+	box-shadow: rgba(0,0,0,1);
+	padding: 10px 0;
+}
+.fixleft .massteritem{
+	width: 95%;
+	float: left;
+	overflow: hidden;
+	margin-top:5px ;
+	margin-left:2% ;
+	
+}
+.fixleft .massteritem input{
+	border-style:none ;
+	height: 40px;
+	width: 100%;
+	font-size:15px;
+	color: #31C27C;
+	float: left;
+	padding: 5px auto;
+	border-radius: 30px;
+	
+	
+	/*background-color:#8A2BE2 ;*/
+}
+.fixleft .massteritem .display{
+	width: 100%;
+float: left;
+overflow: hidden;
+display:none;
+}
+.fixleft .massteritem .display button{
+	border-style: none;
+	height: 30px;
+	width: 90%;
+	line-height:30px;
+	font-size:15px;
+	color: #FFFF00;
+		border-radius: 30px;
+	margin: 3px 0 2px 6% ;
+/*background-color:#5F9EA0 ;*/	
+float: left;	
+}
+.rightinterface{
+	width: 75%;
+	overflow: hidden;
+	position: relative;
+	left: 22%;
+	top: 20px;
+	border: 1px solid red;
+}
+.rightinterface .opner{
+	width: 120px;
+	height: 50px;
+	line-height: 30px;
+	position: absolute;
+	right: 0;
+	top: 10px;
+	border: 1px solid mediumpurple;
+}
+#rufer{
+	margin: 10px 5px;
+	width: 50px;
+	height:30px ;
+	float: left;
+}
+#deleteBu{
+	width: 50px;
+	height:30px ;
+	float: left;
+	margin: 10px 5px;
+}
+
+
+.rightinterface table{
+	width: 100%;
+	text-align: center;
+	margin-top:65px;
+}
+.rightinterface table th{
+	line-height: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	background-color:#A2A2A2 ;
+}
+.rightinterface table td{
+	line-height: 25px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

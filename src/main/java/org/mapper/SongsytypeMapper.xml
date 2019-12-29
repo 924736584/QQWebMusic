@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mapper.SongsytypeMapper">
+  <resultMap id="BaseResultMap" type="org.pojo.Songsytype">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="style" jdbcType="CHAR" property="style" />
+  </resultMap>
+    <insert id="InsertValue" parameterType="org.pojo.Songsytype">
+        insert into songsytype(id,type,style) values (#{id},#{type},#{style})
+    </insert>
+<select id="IsCheckSelect" resultMap="BaseResultMap">
+    select * from songsytype where id=#{id} and type=#{type};
+</select>
+    <delete id="DeleteLineBytypeAndId">
+        delete from songsytype where id=#{id} and type=#{type};
+    </delete>
+    <update id="updateValue" parameterType="org.pojo.Songsytype">
+        update  songsytype set style=#{style} where id=#{id} and type=#{type}
+    </update>
+</mapper>

@@ -1,0 +1,157 @@
+/*公共样式*/
+
+.contener{
+	width: 1200px;
+	margin: 0 auto;
+}
+.topnar{
+	width: 100%;
+	height: 145px;
+	background-color: #fff;
+}
+
+.topcommon{
+	height: 130px;
+}
+.topcommon .logo{
+	float: left;
+	height: 90px;
+	width: 170px;
+	text-align: center;
+	position: relative;
+}
+.topcommon .logo img{
+	 height: 47px;
+	 width: 170px;
+	 position: absolute;
+	 left: 0;
+	 top:50%;
+	 margin-top: -24px;
+}
+.topcommon .topleft{
+	float: left;
+	width: 450px;
+	height: 90px;
+	align-content: center;
+	margin-left:20px ;
+	
+}
+.topcommon .topleft a{
+	width: 70px;
+	height: 90px;
+	float: left;
+	font-size:17px ;
+	line-height: 90px;
+	color: #000;
+	text-align: center;
+	display: block;
+	padding:  0px 10px;
+	transition: all 0.1s linear;
+}
+.topcommon .topleft a.action{
+	color: #fff;
+	background-color:#31c27c ;
+}
+.topcommon .topright{
+	float: right;
+	width: 560px;
+	height: 90px;
+	position: relative;
+	
+}
+.topcommon .topright .source{
+	border: 1px solid gainsboro;
+	height: 40px;
+	width: 220px;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top:-20px ;
+}
+.topcommon .topright .source input{
+	border-style: none;
+	float: left;
+	width: 180px;
+	height: 40px;
+	
+}
+.topcommon .topright .source button{
+	float: right;
+	display: block;
+	width: 38px;
+	height: 40px;
+	border-style:none ;
+}
+.topcommon .topright .userm{
+	width: 320px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top:-20px ;
+	
+}
+.topcommon .topright a {
+	right: 0;
+	float: left;
+	display: block;
+	line-height: 40px;
+}
+.topcommon .topright a.login{
+	margin-right:10px ;
+}
+.topcommon .topright a.ktlz{
+	height: 40px;
+	margin-right: 10px;
+	color: #FFF;
+	font-size: 14px;
+	padding: 0 10px;
+	background-color:#31c27c;
+}
+.topcommon .topright a.ktyyb{
+	border: 1px solid #c9c9c9;
+	font-size: 12px;
+	padding:0 10px ;
+	line-height: 38px;
+	
+}
+.topcommon .stylist{
+	border-top: 1px solid #f2f2f2;
+	float: left;
+	height: 40px;
+	width: 100%;
+	
+}
+.topcommon .stylist ul
+{	
+	text-align: center;
+	line-height: 39px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 786px;
+
+}
+.topcommon .stylist li{
+	float: left;
+	display: block;
+	text-align: center;
+	margin-right: 47px;
+	cursor: pointer;
+	transition: all 0.1s linear;
+}
+
+/*topcommonHover*/
+.topcommon .topleft a:hover,
+.topcommon a.login:hover,
+.topcommon .stylist li:hover{
+	color: #31c27c;
+}
+
+  
+
+
+
+
+

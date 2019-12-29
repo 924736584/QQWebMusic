@@ -1,0 +1,272 @@
+html{
+	background-color:#533d39 ;
+}
+.topbar{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 20px 0;
+}
+.topbar .lefttop
+{
+	height: 40px;
+	float: left;
+	font-size: 28px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 20px;
+}
+.topbar .righttop{
+	height:40px ;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 auto;
+float: right;
+}
+.topbar .righttop h3{
+
+	margin: 0 20px;
+	float: left;
+	font-size: 12px;
+	font-style: normal;
+}
+.topbar .righttop button{
+	height: 40px;
+	width: 120px;
+	text-align: center;
+	line-height: 40px;
+	margin: auto 0;
+	border-radius: 40%;
+	float: left;
+	
+}
+.topbar .righttop .user{
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 10px;
+	
+}
+.topbar .righttop .user img{
+	width: 40px;
+	height: 40px;
+	background-color: cadetblue;
+	border-radius: 50%;
+	display: block;
+	float: left;
+}
+.topbar .righttop .user span{
+	font-style: normal;
+	font-size:14px ;
+	display: block;
+	float: left;
+}
+.topbar .righttop label{
+float: left;
+display: block;
+margin-right: 40px;
+}
+.topbar .righttop label.out{
+	float: left;
+	display: block;
+margin-right: 20px;
+}
+
+
+/*主体内容左*/
+.mcontentleft {
+	float: left;
+	width: 65%;
+	height: 100%;
+	overflow: hidden;
+	border: 1px solid orange;
+}
+.mcontentleft .butlist{
+	float: left;
+}
+.comwh{
+	float: left;
+	margin-left: 100px;
+	border: 1px solid green;
+}
+.mcontentleft .butlist ul{
+	margin-top:30px ;
+	height: 40px;
+	display: block;
+}
+.mcontentleft .butlist li{
+	border: 1px solid #A2A2A2;
+	width: 120px;
+	height: 36px;
+	float: left;
+	line-height: 36px;
+	text-align: center;
+	margin: 0 5px;
+	display: block;
+	cursor: pointer;
+}
+/*主体右*/
+.mcontenright{
+	width: 34%;
+	height: 100%;
+	overflow: hidden;
+	border: 1px solid #ADFF2F;
+	float: left;
+}
+.mcontenright img{
+	width: 186px;
+	height: 186px;
+	display: block;
+	margin: 0 auto;
+}
+.mcontenright iframe{
+	margin:10px 45px;
+	/*border-style: none;*/
+}
+.boutombar{
+	width: 100%;
+	float: left;
+	position: relative;
+	
+}
+.boutombar .barleft{
+	width: 65%;
+	height: 90px;
+	position: absolute;
+	border: 1px solid #FFFF00;
+	left: 0;
+	top: 0;
+}
+.boutombar .barleft .up{
+	width: 80px;
+	height: 30px;
+	background-color:#31C27C ;
+	position: absolute;
+	border: 1px solid #FFFF00;
+	left: 130px;
+	top: 50%;
+	font-size: 18px;
+	margin-top: -15px;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+.boutombar .barleft .play{
+	width: 80px;
+	height: 30px;
+	background-color:#31C27C ;
+	position: absolute;
+	border: 1px solid #FFFF00;
+	left: 230px;
+	top: 50%;
+	font-size: 18px;
+	margin-top: -15px;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.boutombar .barleft .down{
+	width: 80px;
+	height: 30px;
+	background-color:#31C27C ;
+	position: absolute;
+	border: 1px solid #FFFF00;
+	left: 330px;
+	top: 50%;
+	font-size: 18px;
+	margin-top: -15px;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+.boutombar .barleft .conttonr{
+	width: 420px;
+	height: 60px;
+	position: absolute;
+	border: 1px solid #FFFF00;
+	left: 440px;
+	top: 50%;
+	font-size: 18px;
+	margin-top: -30px;
+	text-align: center;
+	font-style: normal;
+}
+.boutombar .barleft .conttonr .palysong{
+	text-align: left;
+	font-size: 15px;
+	margin-left: 20px;
+	margin-top: 5px;
+	float: left;
+}
+.boutombar .barleft .conttonr i{
+	text-align: left;
+	font-size: 10px;
+	margin-top: 10px;
+	float: left;
+}
+.boutombar .barleft .conttonr .songername{
+	text-align: left;
+	font-size: 10px;
+	margin-top: 10px;
+	float: left;
+}
+.conttonr .fa{
+	line-height: 5px;
+	width: 80%;
+	height: 5px;
+	background-color: gray;
+	position: absolute;
+	top: 35px;
+	left: 30px;
+}
+.conttonr .Onbar{
+	line-height: 5px;
+	width: 40%;
+	height: 5px;
+	background-color: greenyellow;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.conttonr .Onrunder{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top:30px;
+	left: 25px;
+	background-color: #FFFF00;
+	border-radius: 50%;
+}
+.conttonr .Ontime{
+	width: 60px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.conttonr .Currtime{
+	width: 60px;
+	height: 30px;
+	position: absolute;
+	left: 3px;
+	top: 39px;
+
+}
+.boutombar .barright {
+	float: left;
+	height: 92px;
+	width: 34%;
+	border: 1px solid blueviolet;
+	position: absolute;
+	right: 0px;
+	top:50%;
+}
+
+
+
+
+
+
+

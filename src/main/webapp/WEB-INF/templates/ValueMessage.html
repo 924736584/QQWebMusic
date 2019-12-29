@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>数据管理</title>
+		<!--初始化设置-->
+		<link rel="stylesheet" href="css/reset.css" th:href="@{/staticresource/css/reset.css}"/>
+		<!--文件样式--> 
+		<link rel="stylesheet" href="css/valuemessage.css" th:href="@{/staticresource/css/valuemessage.css}" />
+		<!--引入JS-->
+		<script type="text/javascript" src="js/valuemessage.js" th:src="@{/staticresource/js/valuemessage.js}"></script>
+	</head>
+	<body onload="Htmlonload()">
+		<div class="fixleft">
+			<div class="massteritem">
+				<input type="button" onclick="openinter(this)"  index="0" value="全部歌曲">
+				<div class="display">
+				</div>
+			</div>
+			<div class="massteritem">
+				<input type="button" onclick="openinter(this)" index="1" value="歌曲推荐">
+			</div>
+			<div class="massteritem">
+				<input type="button" onclick="openinter(this)" index="2" value="新歌首发">
+			</div>
+			<div class="massteritem">
+				<input type="button" onclick="openinter(this)" index="3" value="精彩推荐">
+			</div>
+			<div class="massteritem">
+				<input type="button" onclick="openinter(this,1)" index="4" value="新碟首发">
+			</div>
+		</div>
+		<div class="rightinterface" id="righttable">
+			<div class="opner">
+				<button id="rufer">刷新</button>
+				<button id="deleteBu">删除</button>
+			</div>
+		</div>
+	</body>
+</html>
